@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+   * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
       background: radial-gradient(ellipse at top, #2a1000 0%, #0d0600 100%);
@@ -16,11 +16,11 @@
       flex-direction: column;
       align-items: center;
       padding: 80px 20px 60px;
-      color: white;
+      color: green;
     }
 
     h1 {
-      font-size: 2.2rem;
+      font-size: 5.2rem;
       color: #ff8c00;
       text-shadow: 0 2px 20px rgba(255,140,0,0.5);
       margin-bottom: 6px;
@@ -29,17 +29,17 @@
 
     .subtitle {
       font-size: 0.8rem;
-      color: #666;
+      color: #333;
       letter-spacing: 3px;
       text-transform: uppercase;
-      font-family: Arial, sans-serif;
+      font-family: Dynapuff, sans-serif;
       margin-bottom: 20px;
     }
 
     .game-timer {
       font-size: 2.4rem;
       font-weight: 900;
-      color: white;
+      color: Purple;
       margin-bottom: 24px;
       text-align: center;
       min-width: 60px;
@@ -235,12 +235,11 @@
     .restart-btn:active { transform: scale(0.95); }
 
   .wc-nav { position: fixed; top: 12px; left: 12px; display: flex; gap: 8px; z-index: 1000; }
-  .wc-nav a { background: rgba(0,0,0,0.65); color: white; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-family: Arial, sans-serif; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); }
+  .wc-nav a { background: rgba(0,0,0,0.65); color: red; text-decoration: none; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-family: Arial, sans-serif; backdrop-filter: blur(4px); border: 1px solid rgba(255,255,255,0.15); }
   .wc-nav a:hover { background: rgba(0,0,0,0.9); }
 </style>
 </head>
 <body>
-
 <nav class="wc-nav">
   <a href="/">&#127968; Home</a>
   <a href="/web-craft/">&#8592; Examples</a>
@@ -253,8 +252,8 @@
 
 <div class="scoreboard">
   <div class="team mine">
-    <div class="team-icon">👦</div>
-    <div class="team-name">Your Team</div>
+    <div class="team-icondiv>
+    <div class="team-name">THE BETTER TEAM<">💪💪</div
     <div class="score" id="my-score">0</div>
   </div>
   <div class="vs-sep">VS</div>
@@ -295,7 +294,7 @@
 </div>
 
 <script>
-  const GAME_SECS     = 60;
+const GAME_SECS     = 60;
   const CPU_MS        = 2000;   // CPU scores every 2 seconds
   const COOLDOWN_MS   = 2500;   // button cooldown after each shot
 
@@ -437,7 +436,7 @@
     el.classList.remove('bounce');
     void el.offsetWidth;
     el.classList.add('bounce');
-  }
+  }  
 </script>
 
 </body>
